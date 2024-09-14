@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background: #222;
+}
+::-webkit-scrollbar-thumb{
+    width: 6px;
+    background: #286eaf;
+}
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #333;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: -1;
+}
+section .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+    top: -40%;
+}
+section .row i{
+    color: #3a3a3a;
+    padding: 0 5px;
+    user-select: default;
+    cursor: default;
+}
+section .row i:hover{
+    color: #286eaf;
+}
+
+section .row div{
+    animation: move1 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row div:nth-child(2){
+    animation: move2 80s linear infinite;
+    animation-delay: -40s;
+}
+section .row:nth-child(even) div{
+    animation: move3 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row:nth-child(even) div:nth-child(2){
+    animation: move4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes move1 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes move2 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+@keyframes move3 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes move4 {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+.container h1{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    top: -5%;
+    font-size: 48px;
+    color: #eee;
+}
+#InputName{
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    width: 280px;
+    height: 50px;
+    outline: none;
+    background: #444;
+    border: 2px solid #333;
+    border-radius: 10px;
+    color: #eee;
+    font-weight: 600;
+}
+button{
+    position: relative;
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 18;
+    font-weight: 500;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: #286eaf;
+    color: #eee;
+    cursor: pointer;
+}
+output {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #eee;
+    width: 300px;
+    text-align: center;
+}
+#result::before{
+    position: relative;
+    content: '>>>    ';
+    color: #eee;
+}
+#result::after{
+    position: relative;
+    content: '     <<<';
+    color: #eee;
+}
+
+.about{
+    width: 100%;
+    height: 90vh;
+    background: #286eaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50px;
+    backdrop-filter: blur(6px);
+    z-index: 99;
+    margin-top: -25px;
+    top: 100%;
+}
+
+.about h3{
+    position: relative;
+    top: -10%;
+    font-size: 40px;
+    color: #eee;
+}
+.about p{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    color: #eee;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer span {
+    color: #eee;
+}
+
+@media (max-width : 580px) {
+    .about h3{
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 16px;
+        width: 70%;
+    }
+    .inputer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
