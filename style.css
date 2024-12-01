@@ -831,16 +831,16 @@ section{
     .skills{
         margin-top: 5%;
     }
-    .about .title{
+    .about .container .title{
         font-size: 30px;
     }
-    .skills h3{
+    .skills .wrap h3{
         font-size: 30px;
     }
-    .projects h3{
+    .projects .contain h3{
         font-size: 30px;
     }
-    .follow h3{
+    .follow .sec h3{
         font-size: 30px;
     }
 }
