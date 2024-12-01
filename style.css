@@ -609,6 +609,8 @@ section{
     backdrop-filter: blur(12.3px);
     -webkit-backdrop-filter: blur(12.3px);
     padding: 20px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px
 }
 
 .sec h4{
@@ -832,6 +834,15 @@ section{
     .about .title{
         font-size: 30px;
     }
+    .skills h3{
+        font-size: 30px;
+    }
+    .projects h3{
+        font-size: 30px;
+    }
+    .follow h3{
+        font-size: 30px;
+    }
 }
 
 
@@ -852,6 +863,9 @@ section{
         width: 300px;
         height: 300px;
         left: -20%;
+    }
+    .container .cards .card h3{
+        font-size: 20px;
     }
 }
 
