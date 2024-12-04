@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Solaire Rough';
-    src: url('/fonts/Solaire Rough.otf') format('otf');
+    src: url('/fonts/Solaire Rough.otf') format('opentype');
 }
 
 :root{
