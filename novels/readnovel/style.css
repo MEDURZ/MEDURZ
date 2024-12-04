@@ -69,9 +69,9 @@ h1{
     justify-content: center;
     cursor: pointer;
     color: transparent;
-    font-family: 'Solaire Rough';
-    font-weight: 200;
-    font-size: 60px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 40px;
     letter-spacing: 1px;
     background: linear-gradient(45deg, #ff0035, #733add, #0084ff);
     background-clip: text;
@@ -307,7 +307,7 @@ h1{
     }
 
     .header .title{
-        font-size: 50px;
+        font-size: 30px;
     }
     .novel{
         padding: 40px 4px;
@@ -322,7 +322,7 @@ h1{
 @media (max-width: 450px) {
     
     .header .title{
-        font-size: 40px;
+        font-size: 20px;
     }
     .footer .copy p{
         font-size: 15px;
