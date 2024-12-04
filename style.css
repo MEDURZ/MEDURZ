@@ -253,6 +253,9 @@ section{
     width: 100%;
     height: 100%;
     transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .wrapper .text .buttons button:hover span {
