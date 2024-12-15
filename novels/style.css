@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('fonts/solaire-rough.otf');
+@import url('fonts/Solaire Rough.otf');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ec255f9df1b95df50b9de787b7313cc6?family=The+Sound+of+Truth+Grunge');
 
 @font-face {
     font-family: 'Solaire Rough';
-    src: url('/fonts/solaire-rough.otf') format('opentype');
+    src: url('/fonts/Solaire Rough.otf') format('otf');
 }
-
+@font-face {
+    font-family: "The Sound of Truth Grunge";
+    src: url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.eot");
+    src: url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ec255f9df1b95df50b9de787b7313cc6.svg#The Sound of Truth Grunge")format("svg");
+}
 :root{
     --black: #111;
     --green: #00ff55;
@@ -144,9 +153,9 @@ body{
     text-align: center;
     margin: 15px 0;
     color: #e3e3e3;
-    font-size: 27px;
+    font-size: 25px;
     font-family: 'Playfair Display';
-    font-weight: 500;
+    font-weight: 600;
 }
 .main .grid .card h5.lst{
     text-align: center;
@@ -154,6 +163,14 @@ body{
     color: #e3e3e3;
     font-size: 38px;
     font-family: 'Poppins';
+    font-weight: 500;
+}
+.main .grid .card h5.rbt{
+    text-align: center;
+    margin: 15px 0;
+    color: #e3e3e3;
+    font-size: 38px;
+    font-family: "The Sound of Truth Grunge";
     font-weight: 500;
 }
 .main .grid .card .links{
